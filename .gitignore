@@ -1,0 +1,7 @@
+.ruby-version
+.ruby-gemset
+.vagrant/*
+tmp/*
+!tmp/.keep
+galaxy_roles/*
+!galaxy_roles/.keep
