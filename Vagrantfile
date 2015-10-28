@@ -19,8 +19,8 @@ Vagrant.configure(2) do |config|
 
     v.vm.provision :ansible do |ansible|
       ansible.limit = 'all'
-      ansible.inventory_path = 'inventories/dev'
-      ansible.playbook = 'provision.yml'
+      ansible.inventory_path = File.expand_path('inventories/dev', __dir__)
+      ansible.playbook = File.expand_path('provision.yml', __dir__)
       ansible.verbose = 'vv'
     end
   end
